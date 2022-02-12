@@ -30,4 +30,18 @@ def decode(string, shift)
   .join
 end
 
-puts decode("Bmfy f xywnsl!", 5)
+# solution below is based on @rlmoser99 (github) solution
+# added for practice
+#
+# def caesar_cipher(message, shift, encoded = "") 
+#   message.each_char do |char| 
+#     base = char.ord < 91 ? 65 : 97
+#     if char.ord.between?(65, 90) || char.ord.between?(97, 122)
+#       char_shift = (((char.ord - base) + shift) % 26) + base
+#       encoded += char_shift.chr
+#     else
+#       encoded += char
+#     end
+#   end
+#   encoded
+# end
